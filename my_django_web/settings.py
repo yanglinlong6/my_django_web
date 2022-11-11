@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp',
 ]
 
 MIDDLEWARE = [
@@ -80,10 +81,10 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'neshield',
-        'USER':'dev_user',
-        'PASSWORD':'df234fl,',
-        'HOST':'192.168.3.190',
+        'NAME': 'go_shorturl',
+        'USER':'root',
+        'PASSWORD':'986203',
+        'HOST':'127.0.0.1',
         'PORT':'3306',
     }
 }
