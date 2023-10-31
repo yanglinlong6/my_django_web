@@ -1,14 +1,14 @@
 # Create your views here.
 import datetime
 import json
-import logging
-
-from django.http import HttpResponse
-from . import models
 from datetime import date, datetime
 
+from django.http import HttpResponse
 
-def save_order(request):
+from . import models
+
+
+def saveOrder(request):
     postbody = request.body
     json_param = json.loads(postbody.decode())
     order_title = json_param.get('order_title')
