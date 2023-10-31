@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 from myapp import views as myviews
+from myapp import order_views as myorderviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'hello/', views.hello),
     path(r'index/', myviews.index),
+    path(r'saveOrder/', myorderviews.save_order),
+    path(r'getOrderList/', myorderviews.getOrderList),
 ]

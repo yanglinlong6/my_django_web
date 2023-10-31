@@ -20,9 +20,14 @@ def query():
     )
     book_obj.save()
 
+
 def index(request):
     query()
     print("=====")
     objects_all = models.User.objects.all()
     print(objects_all)
     return HttpResponse("Hello, world. You're at the polls index.")
+
+
+def getOrderList(request):
+    return HttpResponse("list")
